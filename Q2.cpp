@@ -23,7 +23,7 @@ bool chk_consecutive(ll arr[],ll n){
     // if any one passes empty array then the exception will be called and
     //it will print this-
 
-    if(n<=0) throw string("NA");
+    if(n<=0) throw string("Invalid Input");
 
     // find the min element in the array
 
@@ -74,7 +74,7 @@ input-
 
  */
 
-
+    // taking input of size of array
     ll n;cin>>n;
 
     
@@ -111,6 +111,7 @@ input-
             if(i.second>1){
                 cout<<i.first<<", ";
             }
+            
         }
 
         cout<<"is repeated ";

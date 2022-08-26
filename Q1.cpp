@@ -51,6 +51,7 @@ int min_index(int arr[],int n){
 int main(){
 ios_base::sync_with_stdio(false); cin.tie(NULL);
 
+// take size of array
 int n;cin>>n;
 
 /* 
@@ -77,11 +78,16 @@ input-
 
         int arr[n];
 
+        // input array elements
+
         for(int i=0;i<n;i++){
         cin>>arr[i];
         }
         
 
+        // function call and storing the result in integer
+        // if the answer is not valid the it will give n
+        
         int ckii=min_index(arr,n);
         if(ckii==n){
             cout<<"Invalid Input";
